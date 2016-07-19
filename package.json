@@ -2,7 +2,7 @@
   "name": "atom-wp-customizer",
   "main": "./lib/atom-wp-customizer",
   "version": "0.0.0",
-  "description": "Useful WordPress customizer snippets. Forked from WP-Sublime-Customizer",
+  "description": "Stupid-simple, tab-triggered Atom snippets and completions for WordPress Customizer. Forked from WP-Sublime-Customizer",
   "keywords": [
   ],
   "activationCommands": {
