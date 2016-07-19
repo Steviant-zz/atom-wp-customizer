@@ -1,0 +1,23 @@
+'.text.html.php':
+	"WP Customize Register Function":
+		prefix: "wpCustomizerRegisterFunction"
+		body: '''
+			// Customize function.
+			if ( ! function_exists( '${1:PREFIX}_customize_${2:name_panel_section}' ) ) {
+				// Customize Register action.
+				add_action( 'customize_register', '${1:PREFIX}_customize_${2:name_panel_section}' );
+
+				/**
+				 * Customize: ${3:Panel}.
+				 *
+				 * ${4:Customize function}.
+				 *
+				 * @param  object WP_Customize $wp_customize Instance of the WP_Customize_Manager class.
+				 * @since  ${5:1.0.0}
+				 */
+				function ${1:PREFIX}_customize_${2:name_panel_section}( \\$wp_customize ) {
+					${6:}
+				}
+			}
+			${7:}
+		'''

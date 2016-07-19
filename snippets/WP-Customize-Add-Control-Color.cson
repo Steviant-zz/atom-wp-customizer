@@ -1,0 +1,16 @@
+'.text.html.php':
+	"WP Customizer Add Control Color":
+		prefix: "wpCustomizerAddControlColor"
+		body: '''
+			// Control: ${1:Name}.
+			\\$wp_customize->add_control( new WP_Customize_Color_Control(
+				\\$wp_customize,
+				'${2:prefix}_${3:id}',
+				array(
+					'label'      => __( '${4:Color Picker!}', '${5:TEXT_DOMAIN}' ),
+					'section'    => '${2:prefix}_section_${6:id}',
+					${7:'settings'   => '${2:prefix}_${3:id}',}
+				)
+			) );
+			${8:}
+		'''
